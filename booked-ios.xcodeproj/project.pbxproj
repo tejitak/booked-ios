@@ -13,6 +13,7 @@
 		003559EC1B77240F00A73779 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003559EB1B77240F00A73779 /* Images.xcassets */; };
 		003559EF1B77240F00A73779 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 003559ED1B77240F00A73779 /* LaunchScreen.xib */; };
 		003559FB1B77240F00A73779 /* booked_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003559FA1B77240F00A73779 /* booked_iosTests.swift */; };
+		00355A051B7733B300A73779 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00355A041B7733B300A73779 /* LoadingIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		003559F41B77240F00A73779 /* booked-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "booked-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		003559F91B77240F00A73779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003559FA1B77240F00A73779 /* booked_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = booked_iosTests.swift; sourceTree = "<group>"; };
+		00355A041B7733B300A73779 /* LoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				003559EB1B77240F00A73779 /* Images.xcassets */,
 				003559ED1B77240F00A73779 /* LaunchScreen.xib */,
 				003559E21B77240F00A73779 /* Supporting Files */,
+				00355A041B7733B300A73779 /* LoadingIndicator.swift */,
 			);
 			path = "booked-ios";
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					003559DE1B77240F00A73779 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7V3TDDW48R;
 					};
 					003559F31B77240F00A73779 = {
 						CreatedOnToolsVersion = 6.4;
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00355A051B7733B300A73779 /* LoadingIndicator.swift in Sources */,
 				003559E71B77240F00A73779 /* ViewController.swift in Sources */,
 				003559E51B77240F00A73779 /* AppDelegate.swift in Sources */,
 			);
@@ -291,7 +296,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -340,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "booked-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "booked-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
